@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Handson 1</title>
+</head>
+<body>
+    <h1 style="text-align:center; color:red; text-decoration: underline;">JS HANDSON1</h1>
+    <h3 style="color:blue;">Q:1)Add two Numbers</h3>
+<p>You are provided with two numbers A and B. Your task is to add these two numbers.</p>
+<p>Note: You have to complete AddTwoNumbers function. No need to take any input.</p>
+
+<h4 style="color:blue">Input Format</h4>
+<p>The first line contains two integers A and B </p>
+
+<h4 style="color:blue">Output Format</h4>
+<p>Return the result after adding two numbers.</p>
+
+<h4 style="color:blue">Constraints</h4>
+<p>1≤A,B≤500</p>
+
+<h4 style="color:blue">Time Limit</h4>
+<p>1 second</p>
+
+<h4 style="color:blue">Example</h4>
+<p>Sample Input</p>
+<p>2 5</p>
+
+<p>Sample Output</p>
+<p>7</p>
+
+<h3 style="color:blue; font-weight:bold">Code:</h3>
+<pre style="color:green;font-size:large;">
+    const AddTwoNumbers = (a,b) => {
+        return a+b;
+    };
+</pre>
+<h4 style="color:blue">Input</h4>
+<p>2 5</p>
+
+<h4 style="color:blue">Output</h4>
+<p>7</p>
+<br>
+<h3 style="color:blue;">Q:2) Find if the conditions are obeyed or not?</h3>
+ <p>You are given two number first as A and second as B and check if both conditions (A <10 and A>B) are satisfied or not with the help of operators.</p>  
+    <p>Note: You have to complete Is_Valid function. No need to take any input.</p> 
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line contains two integers A and B </p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the result as true if the given condition gets satisfied, else false.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1≤A,B≤500</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>2 5</p>
+
+    <p>Sample Output</p>
+    <p>true</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Is_Valid = (a,b) => {
+            if(a<10 && a>b){
+              return("true")
+            }
+            else{
+              return("false")
+            }
+          };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>5 3</p>
+    <h4 style="color:blue">Output</h4>
+    <p>true</p>
+    <br>
+    <h3 style="color:blue;">Q:3)Check the conditons</h3>
+    <p>You are given two numbers A and B.You need to do the following checks:</p>
+    <ol>
+        <li>if both are divisible by 10 console true.</li>
+        <li>if both are not divisible by 10 console false.</li>
+        <li>if one of them only is divisible by 10 console true.</li>
+    </ol>
+    <p>Use operator to do this.</p>
+    <p>Note: You have to complete Check function. No need to take any input.</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line contains two natural numbers A and B.</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the required result.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1≤A,B≤1000</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>12 20</p>
+
+    <p>Sample Output</p>
+    <p>true</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Check = (A, B) => 
+        {
+            if(A % 10 == 0 && B % 10 == 0){
+            return true;
+        }
+            else if(A % 10 == 0 || B % 10 == 0){
+            return true;
+        }
+            else{
+            return false;
+        }
+        };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>12 20</p>
+    <h4 style="color:blue">Output</h4>
+    <p>true</p>
+    <br>
+    <h3 style="color:blue;">Q:4) Find the first digit of a 4 digit number</h3>
+    <p>You are provided a four digit number N only. Your task is to print out the first digit of that number.</p>
+    <p>Note: You have to complete First_Digit function. No need to take any input.</p>
+    <p>The first line contains one four digit natural number N</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line contains one four digit natural number N.</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the required result.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1000≤N≤9999</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>4567</p>
+
+    <p>Sample Output</p>
+    <p>4</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const First_Digit = (n) => {
+            return parseInt(n/1000);
+         };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>4567</p>
+    <h4 style="color:blue">Output</h4>
+    <p>4</p>
+    <br>
+    <h3 style="color:blue;">Q:5) Find the last digit of a 4 digit number</h3>
+    <p>You are provided a four digit number N only. Your task is to print out the last digit of that number.</p>
+    <p>Note: You have to complete Last_Digit function. No need to take any input.</p>
+    <p>The first line contains one four digit natural number N</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line contains one four digit natural number N.</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the required result.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1000≤N≤9999</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>4567</p>
+    <p>Sample Output</p>
+    <p>7</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Last_Digit = (n) => {
+            return n%10;
+         };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>4567</p>
+    <h4 style="color:blue">Output</h4>
+    <p>7</p>
+    <br>
+    <h3 style="color:blue;">Q:6) Find the remainder</h3>
+    <p>You are provided with two numbers Aand B where A as  divisor and B as  dividend.Your task is find the remainder.</p>
+    <p>Note: You have to complete Find_the_remainder. No need to take any input.</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line of the input contains two integers A and B.</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the result after finding the remainder.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1≤A,B≤1000</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>2 9</p>
+    <p>Sample Output</p>
+    <p>1</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Find_the_remainder = (a,b) => {
+            return b % a;
+        };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>2 9</p>
+    <h4 style="color:blue">Output</h4>
+    <p>1</p>
+    <br>
+    <h3 style="color:blue;">Q:7) Multipy two Numbers</h3>
+    <p>You are provided with two numbers A and B. Your task is to multiply these two numbers.</p>
+    <p>Note: You have to complete Multiply_two_number. No need to take any input.</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The first line of the input contains two integers A and B.</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the result after multiplying two numbers.</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>1≤A,B≤30</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>2 5</p>
+    <p>Sample Output</p>
+    <p>10</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Multiply_two_number = (a,b) => {
+            return a*b;
+        };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>2 5</p>
+    <h4 style="color:blue">Output</h4>
+    <p>10</p>
+    <br>
+    <h3 style="color:blue;">Q:8) Marks Calculator</h3>
+    <p>Shyam has got his marks in three subjects as A,B,and C(out of 100).Write a program to calculate his total marks and his average.</p>
+    <p>Note:  You have to complete Sum and Average functions. No need to take any input.</p>
+    <h4 style="color:blue">Input Format</h4>
+    <p>The input contains three numbers A,B and C</p>
+    <h4 style="color:blue">Output Format</h4>
+    <p>Return the required result a</p>
+    <h4 style="color:blue">Constraints</h4>
+    <p>0 ≤ A,B,C ≤ 100</p>
+    <h4 style="color:blue">Time Limit</h4>
+    <p>1 second</p>
+    <h4 style="color:blue">Example</h4>
+    <p>Sample Input</p>
+    <p>50 20 100</p>
+    <p>Sample Output</p>
+    <p>170</p>
+    <p>56.67</p>
+    <h3 style="color:blue; font-weight:bolder">Code:</h3>
+    <pre style="color:green;font-size:large;">
+        const Sum = (A, B, C) =>
+        {
+            return A+B+C;
+        };
+
+        const Average = (A, B, C) => 
+        {
+            return (A+B+C)/3;
+        };
+    </pre>
+      <h4 style="color:blue">Input</h4>
+    <p>50 20 100</p>
+    <h4 style="color:blue">Output</h4>
+    <p>170</p>
+    <p>56.67</p>
+    <br>
+
+</body>
+</html
